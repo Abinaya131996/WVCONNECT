@@ -50,6 +50,13 @@ h1,h2,h3,h4,h5,h6{
   font-style: normal;
   font-variant: normal;
 }
+hr{
+	border-top: 2px dashed #8c8b8b;
+	width:30%;
+	line-height:10px;
+	align:left;
+	background-color:brown;
+}
 a:hover{
 color:blue;
 }	
