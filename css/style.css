@@ -21,6 +21,15 @@ body a{
   -ms-transition:0.5s all;
   font-weight:400;
 }
+body a:hover{
+    transition:0.5s all;
+  -webkit-transition:0.5s all;
+  -moz-transition:0.5s all;
+  -o-transition:0.5s all;
+  -ms-transition:0.5s all;
+  font-weight:400;
+  color:blue;
+}
 input[type="button"],input[type="submit"]{
   transition:0.5s all;
   -webkit-transition:0.5s all;
@@ -40,7 +49,10 @@ h1,h2,h3,h4,h5,h6{
    font-family: Coda;  
   font-style: normal;
   font-variant: normal;
-} 
+}
+a:hover{
+color:blue;
+}	
 p{
   margin:0;
  /* font-family: 'Open Sans', sans-serif;*/
@@ -191,7 +203,7 @@ ul.nav.navbar-nav li a:hover {
 
 /*-- /header --*/
 .w3ls_banner_section {
-    background: url(../assets/1.jpg) no-repeat 0px 0px;
+    background: url(../assets/promo-bg-2.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -201,7 +213,25 @@ ul.nav.navbar-nav li a:hover {
     position: relative;
     text-align: center;
 }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+
+
+.ball {
+  pointer-events: none;
+  position: absolute; 
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background: gray;
+  animation: implode 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: .5;
+}
+
+@keyframes implode {
+  100% {transform: scale(0)}
+}
 
 .overly {
   position: relative;
@@ -678,6 +708,7 @@ ul.nav.navbar-nav li a:hover {
     font-family:Regulator Nova Bold;
 }
 .about_section,.wthree-news,.w3l_inner_section {
+	
     padding:5em 0;
 }
 .inner_w3l_agile_grids {
@@ -2950,16 +2981,41 @@ ul.aglieits-nav li a:hover{
  .advance-search {
   margin-top: 40px;
    margin-bottom: 40px;
-    background: #c69c6c;
+    
  padding: 15px 15px 20px 15px;
    
-    box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.12);
+   
 }
-.mybutton{
-  background-color: #c69c6c;
+.a{
+  background-color: #00bfff;
   padding:10px 30px;
   border:1px solid #c69c6c;
-  border-radius: 3px;
+  border-radius: 25px;
+  font-size: 20px;
+  color:#fff!important;
+  font-family: Regulator Nova Heavy;
+
+}
+a:hover {
+  background-color: yellow;
+}
+
+.mybutton{
+  background-color: #3385ff;
+  padding:10px 30px;
+  border:1px solid #c69c6c;
+  border-radius: 25px;
+  font-size: 20px;
+  color:#fff!important;
+  font-family: Regulator Nova Heavy;
+
+}
+
+.mybutton:hover{
+  background-color: #000000;
+  padding:10px 30px;
+  border:1px solid #c69c6c;
+  border-radius: 25px;
   font-size: 20px;
   color:#fff!important;
   font-family: Regulator Nova Heavy;
@@ -3678,4 +3734,10 @@ width: 100%;
   html {
   scroll-behavior: smooth;
 }
+
+
+
+
+
+
  
